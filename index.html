@@ -2,186 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Cosmic Playground</title>
+<title>COSMIC PLAYGROUND</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Arial', sans-serif;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ead7c0;
+        color: #111;
+        text-align: center;
+    }
 
-body{
-  background:#edd9c4; /* Astroworld beige */
-  color:#2c2c2c;
-  overflow-x:hidden;
-  position:relative;
-}
+    /* HERO BANNER */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 500px; /* altura gigante */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("BOTA-AQUI-A-URL-DA-IMAGEM"); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* scattered stars */
-body::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(2px 2px at 20% 30%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 80% 50%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 50% 80%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 10% 70%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 70% 20%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 40% 40%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 60% 10%, #fff7e9, transparent),
-    radial-gradient(2px 2px at 30% 85%, #fff7e9, transparent);
-  opacity:0.4;
-  z-index:-1;
-}
+    /* FUNDO ESCURO LEVE PRA DESTACAR O TEXTO */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.25);
+        backdrop-filter: blur(2px);
+    }
 
-/* HEADER */
-header{
-  text-align:center;
-  padding:40px 20px 10px;
-}
-
-h1{
-  font-size:3rem;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  color:#2c2c2c;
-}
-
-/* FESTIVAL POSTER MOCKUP */
-.mock-container{
-  background:#2c2c2c;
-  color:#fdfaf3;
-  max-width:800px;
-  margin:30px auto;
-  border:4px solid #fdfaf3;
-  padding:40px 20px;
-}
-
-/* big star cluster */
-.star-row{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-bottom:20px;
-}
-
-.star{
-  width:40px;
-  height:40px;
-  margin:4px;
-  background:#fdfaf3;
-  clip-path:polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 92%, 50% 72%, 21% 92%, 32% 57%, 2% 35%, 39% 35%);
-}
-
-/* STAMPS */
-.stamp{
-  text-align:center;
-  margin-bottom:20px;
-}
-
-.circle-star{
-  width:70px;
-  height:70px;
-  border:3px solid #fdfaf3;
-  border-radius:50%;
-  color:#fdfaf3;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:2rem;
-}
-
-.approved{
-  margin-top:8px;
-  font-weight:bold;
-  font-size:1.2rem;
-}
-
-.void{
-  font-size:0.8rem;
-  margin-top:2px;
-  color:#ff3b3b;
-}
-
-/* PAGE SECTIONS */
-.section{
-  padding:40px 20px;
-}
-
-.box{
-  background:#2c2c2c;
-  color:#fdfaf3;
-  border:4px solid #fdfaf3;
-  padding:30px;
-  max-width:700px;
-  margin:20px auto;
-  text-align:center;
-}
-
-.box h2{
-  font-size:1.6rem;
-  margin-bottom:10px;
-}
-
-footer{
-  text-align:center;
-  margin:40px 0;
-  color:#2c2c2c;
-  font-size:0.9rem;
-}
+    /* TEXTO CENTRAL */
+    .hero h1 {
+        position: relative;
+        font-size: 58px;
+        letter-spacing: 6px;
+        color: #f8f2e9;
+        text-shadow: 0 0 8px #000;
+        font-weight: 700;
+        margin: 0;
+    }
 
 </style>
 </head>
-
 <body>
 
-<header>
-  <h1>COSMIC PLAYGROUND</h1>
-</header>
-
-<section class="mock-container">
-
-  <div class="stamp">
-    <div class="circle-star">★</div>
-    <div class="approved">GALAXY APPROVED</div>
-    <div class="void">VOID</div>
-  </div>
-
-  <div class="star-row">
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-  </div>
-
-  <h2 style="text-align:center; font-size:1.8rem; margin-top:20px;">
-    Cosmic Playground — Festival Experience
-  </h2>
-
-</section>
-
-<section class="section">
-  <div class="box">
-    <h2>Lineup</h2>
-    <p>Universe • Nebula Kids • Supernova Crew • AstroChild</p>
-  </div>
-
-  <div class="box">
-    <h2>Tickets</h2>
-    <p>Coming soon — prepare your interdimensional portal.</p>
-  </div>
-
-  <div class="box">
-    <h2>Experience</h2>
-    <p>Warm lights, retro psychedelia and abandoned-park energy.</p>
-  </div>
-</section>
-
-<footer>© 2025 Cosmic Playground</footer>
+    <!-- HERO BANNER -->
+    <div class="hero">
+        <h1>COSMIC PLAYGROUND</h1>
+    </div>
 
 </body>
 </html>
+
