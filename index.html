@@ -1,61 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>COSMIC PLAYGROUND</title>
-
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Playground 2031</title>
+  <style>
+    /* ===== Vintage Cosmic Style ===== */
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ead7c0;
-        color: #111;
-        text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #e7dcc8;
+      color: #1c1c1b;
+      line-height: 1.6;
     }
 
-    /* HERO BANNER */
-    .hero {
-        position: relative;
-        width: 100%;
-        height: 500px; /* altura gigante */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(CosmicPlayground/CosmicPlayground.png); 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* Background Vintage Texture */
+    .paper-texture {
+      background-image: url('https://i.imgur.com/aI8iGtw.jpeg'); /* vintage texture */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #f5efe4;
     }
 
-    /* FUNDO ESCURO LEVE PRA DESTACAR O TEXTO */
-    .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.25);
-        backdrop-filter: blur(2px);
+    .paper-texture h1 {
+      font-size: 4rem;
+      letter-spacing: 6px;
+      text-shadow: 0 0 10px #000;
     }
 
-    /* TEXTO CENTRAL */
-    .hero h1 {
-        position: relative;
-        font-size: 58px;
-        letter-spacing: 6px;
-        color: #f8f2e9;
-        text-shadow: 0 0 8px #000;
-        font-weight: 700;
-        margin: 0;
+    /* Content Section */
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #f4ebdb;
+      padding: 40px;
+      border: 2px solid #d6c6ac;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
     }
 
-</style>
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 80%;
+      height: 2px;
+      background: #b6a48a;
+      margin: 25px auto;
+    }
+
+    .star {
+      text-align: center;
+      font-size: 2rem;
+      margin: 15px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #3c3c3c;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- HERO BANNER -->
-    <div class="hero">
-        <h1>COSMIC PLAYGROUND</h1>
-    </div>
+  <!-- Vintage Header Banner -->
+  <header class="paper-texture">
+    <h1>COSMIC PLAYGROUND</h1>
+  </header>
+
+  <!-- What is Cosmic Playground -->
+  <section class="section">
+    <h2>About the Cosmic Playground Festival</h2>
+    <p>
+      Cosmic Playground is a multidimensional music and art festival inspired by retro aesthetics,
+      cosmic imagination, and surreal carnival atmospheres. Blending vintage textures with futuristic
+      soundscapes, the event invites dreamers, creators, and explorers into an immersive world of
+      mystery and celebration.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      The festival takes place in a fictional universe called "The Void Garden," where cosmic
+      attractions, star-lit pathways, and vortex gates guide visitors through an unforgettable artistic
+      journey. Every detail is crafted to feel like a mix of an old vinyl poster, a forgotten amusement park,
+      and a sci-fi dream.
+    </p>
+  </section>
+
+  <!-- Rating / Galaxy Approval -->
+  <section class="section">
+    <h2>Galaxy Approval Seal</h2>
+
+    <div class="star">★★★★★</div>
+
+    <p style="text-align: center; font-style: italic;">
+      Rated by the Interstellar Artistic Council
+    </p>
+  </section>
+
+  <!-- Lineup -->
+  <section class="section">
+    <h2>Lineup 2031</h2>
+    <p style="text-align: center;">
+      Universe • Nebula Kids • Supernova Crew • AstroChild • Void Angels • Lunar Echoes
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2031 Cosmic Playground Festival — Designed in a Vintage Cosmic Style
+  </footer>
 
 </body>
 </html>
-
