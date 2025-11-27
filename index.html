@@ -1,63 +1,196 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COSMIC SOUNDS - THE PRELUDE</title> <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cosmic Playground</title>
+<style>
+
+/* ====== RESET ====== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ====== BACKGROUND DO ESPAÇO ====== */
+body{
+  background: #000016;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Estrelas */
+body::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:
+    radial-gradient(2px 2px at 20% 30%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 80% 50%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 50% 80%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 10% 70%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 70% 20%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 40% 40%, #ffffffaa, transparent),
+    radial-gradient(1.5px 1.5px at 60% 10%, #ffffffaa, transparent),
+    radial-gradient(1.5px 1.5px at 30% 85%, #ffffffaa, transparent);
+  z-index:-1;
+}
+
+/* ====== HEADER ====== */
+header{
+  text-align:center;
+  padding:70px 20px;
+}
+
+h1{
+  font-size:3rem;
+  letter-spacing:4px;
+  text-transform: uppercase;
+  color:#E6D2FF;
+  text-shadow: 0px 0px 15px #b065ff;
+}
+
+.subtext{
+  color:#ae8cff;
+  font-size:1.2rem;
+  margin-top:10px;
+}
+
+/* ====== SEÇÃO DO ÁLBUM MOCKUP ====== */
+.album-section{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.mock-card{
+  background: #0A001A;
+  border: 1px solid #7e3af2;
+  padding:30px;
+  max-width:500px;
+  margin:20px auto;
+  border-radius:12px;
+  box-shadow: 0px 0px 25px #7e3af280;
+}
+
+/* Galaxy Approved + VOID */
+.stamp{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.circle-star{
+  width:70px;
+  height:70px;
+  border:2px solid #ae8cff;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:1.8rem;
+  color:#ae8cff;
+  text-shadow:0 0 8px #ae8cff;
+}
+
+.approved{
+  margin-top:10px;
+  font-size:1.2rem;
+  letter-spacing:2px;
+  color:#b88bff;
+  text-shadow:0 0 6px #b065ff;
+}
+
+.void{
+  margin-top:5px;
+  font-size:0.8rem;
+  letter-spacing:4px;
+  color:#ff5e5e;
+  text-shadow:0 0 6px #ff3b3b;
+}
+
+/* ====== PÁGINA ESTILIZADA DO “SITE DE FESTIVAL” ====== */
+.section-festival{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.box{
+  margin:20px auto;
+  max-width:600px;
+  background:#0A001A;
+  padding:30px;
+  border:1px dashed #c7adff;
+  border-radius:12px;
+  box-shadow: 0 0 20px #b065ff50;
+}
+
+.box h2{
+  color:#e6d2ff;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.box p{
+  color:#c7adff;
+  margin-top:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:40px 20px;
+  text-align:center;
+  color:#ae8cff84;
+}
+</style>
 </head>
+
 <body>
 
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+<header>
+  <h1>COSMIC PLAYGROUND</h1>
+  <p class="subtext">A Journey Beyond Stars • 2025</p>
+</header>
 
-    <div class="site-container">
-
-        <div class="stamp galaxy-approved">
-            <span class="text">GALAXY APPROVED</span>
-            <span class="star-icon">★</span>
-        </div>
-
-        <div class="stamp void-stamp">
-            <span class="text">VOID</span>
-        </div>
-        
-        <header>
-            <h1 class="cosmic-title">COSMIC PLAYGROUND</h1>
-            <p class="subtitle">THE PRELUDE EXPERIENCE</p>
-            <p class="announcement">A NEW ERA UNVEILED</p> </header>
-
-        <section class="release-info">
-            <p class="release-date">NOV 2029 / 2030 — ALBUM RELEASE</p>
-        </section>
-
-        <section class="signup-form">
-            <form>
-                <input type="email" placeholder="EMAIL" required>
-                <input type="tel" placeholder="PHONE (OPTIONAL)">
-                <input type="text" placeholder="COORDINATES (OPTIONAL)">
-                <button type="submit">LOCK IN FREQUENCY</button>
-            </form>
-        </section>
-
-        <section class="festival-tag">
-            <h2>the first cosmic festival</h2> <p class="launch-warning">LAUNCH IMMINENT - FREQUENCIES BEING ADJUSTED</p> </section>
-
-        <footer>
-            <nav class="footer-links">
-                <a href="#">ABOUT THE EXPERIENCE</a>
-                <a href="#">CONTACT</a>
-                <a href="#">MANIFESTO</a>
-                <a href="#">SAFETY & RULES</a>
-                <a href="#">LOST COSMIC ITEMS</a>
-                <a href="#">ACCESSIBILITY</a>
-                <a href="#">TERMS</a>
-                <a href="#">PRIVACY</a>
-                <a href="#">COOKIES</a>
-                <a href="#">DO NOT SELL MY PERSONAL INFORMATION</a>
-                <link rel="stylesheet" href="styles.css">
-            </nav>
-        </footer>
+<!-- MOCKUP -->
+<section class="album-section">
+  <div class="mock-card">
+    <div class="stamp">
+      <div class="circle-star">★</div>
+      <div class="approved">GALAXY APPROVED</div>
+      <div class="void">VOID</div>
     </div>
+    <h2 style="color:#e6d2ff;">Cosmic Playground — Album Experience</h2>
+    <p style="color:#c7adff;">Um portal intergaláctico cheio de neon, glitch e vibes cósmicas.</p>
+  </div>
+</section>
+
+<!-- SESSÕES DO FESTIVAL -->
+<section class="section-festival">
+  <div class="box">
+    <h2>Lineup</h2>
+    <p>Universo, Supernova, Astro Child, Space Tears</p>
+  </div>
+  
+  <div class="box">
+    <h2>Tickets</h2>
+    <p>Disponível em breve no portal dimensional.</p>
+  </div>
+
+  <div class="box">
+    <h2>Experience</h2>
+    <p>Luzes, fumaça roxa, broken beats, portais e visuais que expandem a mente.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Cosmic Playground — Projeto Lil Thalis
+</footer>
+
 </body>
 </html>
