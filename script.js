@@ -33,7 +33,7 @@ const dimensions = {
             </div>
         </a>
 
-        <a href="https://SEU-LINK-DE-COMPRA.com" target="_blank" class="item-link">
+        <a href="" target="_blank" class="item-link">
             <div class="item-box float-3">
                 <img src="assets/cap-cosmic.png" alt="Cosmic Cap">
                 <div class="item-info">
