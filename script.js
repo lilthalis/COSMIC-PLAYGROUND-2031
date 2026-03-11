@@ -6,14 +6,43 @@ const dimensions = {
            <p>WELCOME TO THE 1990-2077 ARCHIVE</p>
         </div>
     `,
-    merch: `
-        <h2 style="font-size: 15px;">DROP 01: ARTIFACTS</h2>
-        <div style="display:flex; gap:20px; margin-top:30px;">
-            <div style="border:1px solid #444; padding:10px;">
-                <div style="width:150px; height:150px; background:#222;"></div>
-                <p style="font-size:8px; margin-top:10px;">VOID HOODIE</p>
+  merch: `
+    <div class="vcr-header">
+        <h2 class="glitch-title" style="font-size: 1.5rem;">SUPPLY STORE</h2>
+        <p style="font-size: 8px;">SELECT ARTIFACT TO INITIALIZE PURCHASE</p>
+    </div>
+
+    <div class="shop-grid">
+        <a href="https://SEU-LINK-DE-COMPRA.com" target="_blank" class="item-link">
+            <div class="item-box float-1">
+                <img src="assets/hoodie-void.png" alt="Void Hoodie">
+                <div class="item-info">
+                    <h3>VOID HOODIE</h3>
+                    <p>$85.00</p>
+                </div>
             </div>
-        </div>
+        </a>
+
+        <a href="https://SEU-LINK-DE-COMPRA.com" target="_blank" class="item-link">
+            <div class="item-box float-2">
+                <img src="assets/tee-stargazer.png" alt="Stargazer Tee">
+                <div class="item-info">
+                    <h3>STARGAZER TEE</h3>
+                    <p>$45.00</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://SEU-LINK-DE-COMPRA.com" target="_blank" class="item-link">
+            <div class="item-box float-3">
+                <img src="assets/cap-cosmic.png" alt="Cosmic Cap">
+                <div class="item-info">
+                    <h3>COSMIC CAP</h3>
+                    <p>$30.00</p>
+                </div>
+            </div>
+        </a>
+    </div>
     `,
     tour: `
         <h2 style="font-size: 15px;">TRACKING SIGNAL...</h2>

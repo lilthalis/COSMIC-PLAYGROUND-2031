@@ -62,3 +62,61 @@ nav button:hover { background: var(--neon-purple); color: black; }
     font-size: 3rem; text-transform: uppercase;
     text-shadow: 2px 0 red, -2px 0 blue; /* Efeito de separação cromática */
 }
+
+/* Organização da Loja */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 60px;
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(168, 85, 247, 0.3); /* Roxo neon suave */
+    padding: 20px;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.item-box:hover {
+    border-color: var(--neon-purple);
+    background: rgba(168, 85, 247, 0.1);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.item-box img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+/* ANIMAÇÕES DE FLUTUAÇÃO (Diferentes tempos para cada item) */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.float-1 { animation: float 4s ease-in-out infinite; }
+.float-2 { animation: float 5s ease-in-out infinite; }
+.float-3 { animation: float 3.5s ease-in-out infinite; }
+
+.item-info h3 {
+    font-size: 10px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.item-info p {
+    font-size: 8px;
+    color: var(--neon-purple);
+    margin-top: 5px;
+}
