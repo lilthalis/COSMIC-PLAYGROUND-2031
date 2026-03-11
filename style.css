@@ -1,0 +1,64 @@
+:root {
+    --neon-purple: #a855f7;
+    --crt-bg: #121212;
+}
+
+body {
+    background: var(--crt-bg);
+    color: #eee;
+    font-family: 'Press Start 2P', cursive; /* Fonte de jogo antigo */
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Efeito de linhas de TV (Scanlines) */
+.scanline {
+    width: 100%; height: 100%;
+    position: fixed; top: 0; left: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none; z-index: 20;
+}
+
+/* Ruído VHS (Grain) */
+.vhs-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://media.giphy.com/media/oEI9uWUicGuS4/giphy.gif');
+    opacity: 0.07;
+    pointer-events: none; z-index: 21;
+}
+
+.vhs-nav {
+    display: flex; justify-content: space-between;
+    padding: 20px; background: rgba(0,0,0,0.8);
+    border-bottom: 2px solid var(--neon-purple);
+}
+
+.vcr-rec { color: #ff0000; animation: blink 1s infinite; }
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Botões Estilo Lil Uzi */
+nav button {
+    background: none; border: 1px solid var(--neon-purple);
+    color: var(--neon-purple); padding: 5px 15px;
+    font-size: 10px; cursor: pointer;
+    box-shadow: 0 0 10px var(--neon-purple);
+}
+
+nav button:hover { background: var(--neon-purple); color: black; }
+
+/* Palco Central */
+#screen {
+    height: 80vh; display: flex;
+    flex-direction: column; align-items: center;
+    justify-content: center; text-align: center;
+}
+
+.glitch-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem; text-transform: uppercase;
+    text-shadow: 2px 0 red, -2px 0 blue; /* Efeito de separação cromática */
+}
